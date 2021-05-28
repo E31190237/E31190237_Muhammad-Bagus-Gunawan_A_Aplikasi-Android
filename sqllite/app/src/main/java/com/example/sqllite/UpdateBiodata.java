@@ -74,5 +74,4 @@ public class UpdateBiodata extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
-
 }
