@@ -75,7 +75,8 @@ public class LoginActivity extends AppCompatActivity {
         String user = mViewUser.getText().toString();
         String password = mViewPassword.getText().toString();
 
-        /* Jika form user kosong atau TIDAK memenuhi kriteria di Method cekUser() maka, Set error di Form User dengan menset variable fokus dan error di Viewnya juga cancel menjadi true*/
+        /* Jika form user kosong atau TIDAK memenuhi kriteria di Method cekUser() maka,
+        Set error di Form User dengan menset variable fokus dan error di Viewnya juga cancel menjadi true*/
         if (TextUtils.isEmpty(user)){
             mViewUser.setError("This field is required");
             fokus = mViewUser;
@@ -117,5 +118,4 @@ public class LoginActivity extends AppCompatActivity {
     /*True jika parameter user sama dengan data user yang terdaftar dari Preferences */
     private boolean cekUser(String user){
         return user.equals(Preferences.getRegisteredUser(getBaseContext()));
-    }
-}
+    }}
